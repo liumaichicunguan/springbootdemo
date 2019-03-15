@@ -2,11 +2,34 @@ spring:
   profiles:
     active: dev
 
-#  datasource:
-#    url: jdbc:mysql://localhost:3306/test?useUnicode=true&charaterEncoding=utf-8
-#    username: root
-#    password:
-#    driver-class-name: com.mysql.jdbc.Driver
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&charaterEncoding=utf-8
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    name: mydb
+    druid:
+      # 初始化大小，最小，最大
+      initial-size: 8
+      min-idle: 8
+      max-active: 32
+      # 配置获取连接等待超时的时间
+      max-wait: 60000
+      minEvictableIdleTimeMillis: 300000
+      validation-query: SELECT 1 FROM DUAL
+      test-while-idle: true
+      # 开启druid 监控
+#      stat-view-servlet:
+#        url-pattern: /druid/*
+#        #allow: 121.69.59.138,124.205.19.250
+#        loginUsername: admin
+#        loginPassword: cainiao123
+#        enabled: true
+      # 指定需要统计哪些url
+      web-stat-filter:
+        url-pattern: /*
+        profile-enable: true
 
   redis:
     database: 0
@@ -20,7 +43,8 @@ spring:
       min-idle: 0
     timeout: 0
 
-mybatis:
-  type-aliases-package: com.zdjk.demo.entity
+mybatis-plus:
+  global-config:
+    id-type: 2
   mapper-locations: classpath*:mapper/*/*.xml
-
+  type-aliases-package: com.qgiuaooe.springbootdemo.entity
