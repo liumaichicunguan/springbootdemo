@@ -5,6 +5,6 @@ import lombok.Data;
 
 @Data
 @TableName("admin_user")
-public class adminUser {
+public class AdminUser {
 
 }
