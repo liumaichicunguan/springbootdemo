@@ -1,4 +1,4 @@
-package com.qgiuaooe.springbootdemo.controller;
+package com.qgiuaooe.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

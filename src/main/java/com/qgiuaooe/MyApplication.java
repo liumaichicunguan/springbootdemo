@@ -1,4 +1,4 @@
-package com.qgiuaooe.springbootdemo;
+package com.qgiuaooe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,10 +9,10 @@ import org.springframework.context.annotation.Bean;
 import java.util.concurrent.TimeUnit;
 
 @SpringBootApplication
-public class SpringBootDemoApplication {
+public class MyApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootDemoApplication.class, args);
+        SpringApplication.run(MyApplication.class, args);
     }
 
     /**

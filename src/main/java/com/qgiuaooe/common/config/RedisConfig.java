@@ -1,4 +1,4 @@
-package com.qgiuaooe.springbootdemo.common.config;
+package com.qgiuaooe.common.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;

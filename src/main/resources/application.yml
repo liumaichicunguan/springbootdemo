@@ -47,4 +47,4 @@ mybatis-plus:
   global-config:
     id-type: 2
   mapper-locations: classpath*:mapper/*/*.xml
-  type-aliases-package: com.qgiuaooe.springbootdemo.entity
+  type-aliases-package: com.qgiuaooe.entity

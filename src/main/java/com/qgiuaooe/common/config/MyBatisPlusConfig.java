@@ -1,10 +1,10 @@
-package com.qgiuaooe.springbootdemo.common.config;
+package com.qgiuaooe.common.config;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@MapperScan("com.qgiuaooe.springbootdemo.mapper")
+@MapperScan("com.qgiuaooe.mapper")
 public class MyBatisPlusConfig {
 
 }
